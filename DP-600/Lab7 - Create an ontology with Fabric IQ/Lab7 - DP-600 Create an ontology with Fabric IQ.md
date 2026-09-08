@@ -6,35 +6,36 @@ In this lab, you’ll create a complete Fabric IQ ontology for a fictitious heal
 
 **Create a workspace** 
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.001.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.001.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.001.jpeg)
 
 **Download and load the hospital data files** 
 
 1. Download[ sample-data.zip ](https://github.com/MicrosoftLearning/mslearn-fabric/raw/main/Allfiles/Labs/23-24/sample-data.zip)and extract the CSV files to your local computer. The ZIP file contains: 
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.002.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.002.jpeg)
 
 2. Upload the five lakehouse files: 
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.003.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.003.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.004.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.004.jpeg)
 
 3. Convert each uploaded file to a table: 
 
-   ![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.005.jpeg)
+   ![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.005.jpeg)
 
-   ![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.006.png)
+   ![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.006.png)
 
-   ![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.007.png)
+   ![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.007.png)
 
 4. Verify  you  have  five  tables  in the **Tables** section: hospitals, departments, rooms, patients, 
 
    and vitalsignequipment as shown in the image below. 
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.008.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.008.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.009.png)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.009.png)
 
 **Create an eventhouse with streaming data** 
 
@@ -44,7 +45,7 @@ Next, you’ll create an eventhouse to store real-time vital signs data that you
 1. Name the eventhouse LamnaHealthcareEH and select **Create**. 
 1. A  default  KQL  database  is  created  with  the  same  name.  Select  the  KQL database to open it. 
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.010.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.010.jpeg)
 
 **Ingest vital signs data** 
 
@@ -55,21 +56,21 @@ Next, you’ll create an eventhouse to store real-time vital signs data that you
 1. Select **Finish** to complete the ingestion. 
 1. Verify the **VitalSignsReadings** table appears in the KQL database. 
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.011.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.011.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.012.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.012.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.013.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.013.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.014.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.014.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.015.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.015.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.016.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.016.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.017.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.017.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.018.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.018.jpeg)
 
 **Create an ontology** 
 
@@ -79,7 +80,7 @@ Now you’ll create an empty ontology and build it step by step.
 1. Name the ontology LamnaHealthcareOntology and select **Create**. 
 1. The  ontology  canvas  opens,  empty  and  ready  for  you  to  build  your  data model. 
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.019.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.019.jpeg)
 
 **Create entity types** 
 
@@ -106,29 +107,29 @@ Create Hospital entity type
 
 Select **Key: Add entity type key** and choose **HospitalId** as the key, select **Save**. 
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.020.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.020.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.021.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.021.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.022.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.022.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.023.png)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.023.png)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.024.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.024.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.025.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.025.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.026.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.026.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.027.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.027.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.028.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.028.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.029.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.029.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.030.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.030.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.031.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.031.jpeg)
 
 **Create remaining entity types** 
 
@@ -163,19 +164,19 @@ Follow  the  same  process  to  create  these  four  additional  entity  types  
 ||||||
 You now have five entity types with properties and keys defined. Verify that the Entity Types pane shows all five entity types, and that properties and entity type key have been defined for each entity: 
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.032.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.032.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.033.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.033.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.034.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.034.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.035.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.035.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.036.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.036.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.037.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.037.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.038.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.038.jpeg)
 
 **Create relationship types** 
 
@@ -192,9 +193,9 @@ Create Hospital-Department relationship
 
 The  Contains  relationship  line  appears  on  the  canvas  connecting  Hospital  to Department. You’ll configure the data source later. 
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.039.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.039.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.040.png)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.040.png)
 
 **Create remaining relationships** 
 
@@ -217,13 +218,13 @@ Follow the same process to create these four additional relationships:
 |||||
 Your ontology canvas should look similar to the image below. Depending on canvas layout and which entities are selected, you may need to pan or zoom to view all entity types and relationship lines. 
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.041.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.041.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.042.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.042.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.043.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.043.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.044.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.044.jpeg)
 
 **Bind entity types to data** 
 
@@ -250,17 +251,17 @@ The system usually auto-maps when names match.
 
 9. Select **Save**. 
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.045.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.045.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.046.png)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.046.png)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.047.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.047.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.048.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.048.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.049.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.049.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.050.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.050.jpeg)
 
 **Bind Department, Room, and Patient entities** 
 
@@ -281,11 +282,11 @@ Follow the same binding process for these three entities, which only require sta
 ||||
 |**Patient** |patients |PatientId FirstName LastName DateOfBirth AdmissionDate CurrentRoomId |
 ||||
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.051.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.051.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.052.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.052.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.053.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.053.jpeg)
 
 **Bind VitalSignEquipment entity** 
 
@@ -307,13 +308,13 @@ ReadingId | EquipmentId | Timestamp            | HeartRate | OxygenSaturation | 
 
 Notice the time-series data only has measurements and EquipmentId—not patient or  equipment  type.  The  static  binding  creates  the  equipment  entities  with  full context (VS-1001 is Continuous Monitoring equipment tracking Patient 1001), and the time-series binding attaches streaming measurements to those entities using EquipmentId as the matching key. 
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.054.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.054.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.055.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.055.jpeg)
 
 ![ref1]
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.057.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.057.jpeg)
 
 **Configure relationships** 
 
@@ -323,7 +324,7 @@ Now you’ll configure each relationship type by specifying which table links th
 
 1. On the ontology canvas, select the **Hospital** entity, then select **contains** in the relationship line between Hospital and Department. 
 
-   ![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.058.jpeg)
+   ![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.058.jpeg)
 
 2. In the **Relationship configuration** pane on the right, configure the source data location: 
 - **Workspace**: Select your workspace 
@@ -331,7 +332,7 @@ Now you’ll configure each relationship type by specifying which table links th
 - **Schema**: Select **dbo** 
 - **Table**: Select **departments** 
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.059.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.059.jpeg)
 
 **Note**: The departments table works as the relationship source because it contains keys for both Hospital (HospitalId) and Department (DepartmentId). The hospitals table wouldn’t work here because it only contains HospitalId. 
 
@@ -341,19 +342,19 @@ Now you’ll configure each relationship type by specifying which table links th
 - Under **2. Target entity type**: Select **Department** (change from default if needed) 
   - **Source  column**:  Select **DepartmentId** (matches  the DepartmentId key defined on the Department entity) 
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.060.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.060.jpeg)
 
 Your relationship configuration should look like this: 
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.061.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.061.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.062.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.062.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.063.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.063.jpeg)
 
 ![ref1]
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.064.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.064.jpeg)
 
 **Preview the ontology** 
 
@@ -369,12 +370,12 @@ You’ll see tiles showing:
 - **Property  charts**:  Bar  charts  showing  the  distribution  of  property values (like RoomType, RoomNumber, or DepartmentId) 
 - **Entity instances table**: List of all individual room instances with their properties 
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.065.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.065.jpeg)
 
 **Clean up resources** 
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.066.jpeg)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.066.jpeg)
 
-![](Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.067.png)
+![](images/Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.067.png)
 
 [ref1]: Aspose.Words.72f25874-7094-4144-8cb7-b6a6e901462e.056.jpeg
