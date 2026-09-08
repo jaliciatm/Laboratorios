@@ -1,1 +1,1 @@
-# Laboratorios de la DP-600 de Microsoft
+# Laboratorios de Microsoft para la certificación de DP-600 
