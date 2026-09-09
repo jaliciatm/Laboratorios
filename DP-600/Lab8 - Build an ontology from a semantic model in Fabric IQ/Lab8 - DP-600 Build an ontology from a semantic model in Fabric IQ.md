@@ -1,7 +1,7 @@
 ﻿**Laboratorio 8  DP-600**
 
 **Build an ontology from a semantic model** 
-
+<br>
 **in Fabric IQ**
 
 There are two ways to build a Fabric IQ ontology: manually, by creating each entity type and relationship from scratch, or automatically, by generating the structure from a Power BI semantic model. This lab uses the semantic model approach. 
