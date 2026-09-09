@@ -16,9 +16,9 @@ Now you’ll create a lakehouse and load hospital operations data that will form
 1. Name the lakehouse LamnaHealthcareLH and select **Create**. 
 1. When the lakehouse opens, you’ll upload CSV files and convert them to tables. 
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.001.png)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.001.png)
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.002.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.002.jpeg)
 
 **Download and load the hospital data files** 
 
@@ -32,7 +32,7 @@ You’ll download sample CSV files, upload them to the lakehouse, and convert th
 - **VitalSignEquipment.csv** -  Monitoring  equipment  assigned  to patients  (which  patient  is  being  monitored,  and  when  monitoring started) 
 - **VitalSignsReadings.csv** -  Patient  vital  sign  measurements  (heart rate, oxygen levels, respiratory rate) collected over time from the vital sign equipment 
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.003.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.003.jpeg)
 
 2. Upload the five lakehouse files: 
 - In the lakehouse, select **Upload files** from the main view 
@@ -43,11 +43,11 @@ You’ll download sample CSV files, upload them to the lakehouse, and convert th
 
 **Note**: Do not upload **VitalSignsReadings.csv** to the lakehouse. You’ll load it to the eventhouse in the next section, where it belongs as time-series data. 
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.004.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.004.jpeg)
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.005.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.005.jpeg)
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.006.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.006.jpeg)
 
 3. Convert each uploaded file to a table: 
 - In **Explorer**, select the **Files** folder, where you should see all five CSV files 
@@ -60,21 +60,21 @@ You’ll download sample CSV files, upload them to the lakehouse, and convert th
 - Select **Load** 
 - Repeat this process for all five files 
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.007.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.007.jpeg)
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.008.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.008.jpeg)
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.009.png)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.009.png)
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.010.png)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.010.png)
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.011.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.011.jpeg)
 
 4. Verify  you  have  five  tables  in the **Tables** section: hospitals, departments, rooms, patients, 
 
    and vitalSignEquipment. 
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.012.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.012.jpeg)
 
 **Create an eventhouse with streaming data** 
 
@@ -84,7 +84,7 @@ Next, you’ll create an eventhouse to store real-time vital signs data as a tim
 1. Name the eventhouse LamnaHealthcareEH and select **Create**. 
 1. A  default  KQL  database  is  created  with  the  same  name.  Select  the  KQL database to open it. 
 
-   ![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.013.jpeg)
+   ![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.013.jpeg)
 
 **Ingest vital signs data** 
 
@@ -95,17 +95,17 @@ Next, you’ll create an eventhouse to store real-time vital signs data as a tim
 1. Select **Finish** to complete the ingestion. 
 1. Verify the **VitalSignsReadings** table appears in the KQL database with 20 rows. 
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.014.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.014.jpeg)
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.015.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.015.jpeg)
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.016.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.016.jpeg)
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.017.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.017.jpeg)
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.018.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.018.jpeg)
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.019.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.019.jpeg)
 
 **Create a semantic model** 
 
@@ -118,19 +118,19 @@ Now you’ll create a Power BI semantic model from your lakehouse. As you define
 - Select  all  five tables: **hospitals**, **departments**, **rooms**, **patients**, **vitalSignEquipm ent**. 
 - Select **Confirm**. 
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.020.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.020.jpeg)
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.021.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.021.jpeg)
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.022.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.022.jpeg)
 
-**### Define relationships between tables ![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.023.png)**
+**### Define relationships between tables ![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.023.png)**
 
 Relationships  in  the  semantic  model  define  how  tables  connect  to  each  other. These relationships become the relationship types in your ontology. 
 
 1. In the ribbon, select **Manage relationships** > **+ New relationship**. 
 
-   ![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.024.jpeg)
+   ![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.024.jpeg)
 
 2. Create the first relationship with these settings, then select **Save**: 
 
@@ -141,13 +141,13 @@ Relationships  in  the  semantic  model  define  how  tables  connect  to  each 
 
 o 
 
-**To table**: hospitals  **Column**: HospitalId ![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.025.png)![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.026.png)
+**To table**: hospitals  **Column**: HospitalId ![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.025.png)![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.026.png)
 
 - **Cardinality**: Many to one (\*:1) 
 - **Cross filter direction**: Both 
 - Select **Save** 
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.027.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.027.jpeg)
 
 3. Select **+ New relationship** again and create three more relationships: 
 
@@ -162,12 +162,12 @@ o
 4. Use  the  same  settings  for  each:  cardinality **Many  to  one  (\*:1)**,  cross filter **Both**, then **Save**. 
 4. Verify your **Manage relationships** pane shows exactly 4 active relationships, matching the image below, then select **Close**. 
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.028.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.028.jpeg)
 
 6. In  the  top  navigation  bar,  select  the **×** next  to **LamnaHealthcareModel** to close the semantic model. Return to your workspace item list. 
 6. In  your  workspace  item  list,  select  the **ellipsis  (…)** next to **LamnaHealthcareModel** and select **Open semantic model**. 
 
-   ![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.029.jpeg)
+   ![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.029.jpeg)
 
    **Generate the ontology** 
 
@@ -175,22 +175,22 @@ o
 
 1. From the top ribbon, select **Generate Ontology**. 
 
-   ![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.030.jpeg)
+   ![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.030.jpeg)
 
-   ![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.031.jpeg)
+   ![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.031.jpeg)
 
 2. Select your workspace name from the drop-down box. 
 2. In the name dialog, enter LamnaHealthcareOntology, then select **Create** 
 
    **Tip**: Ontology names can include numbers, letters, and underscores — no spaces or dashes. 
 
-   ![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.032.png)
+   ![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.032.png)
 
    Wait a few moments while the system is **Generating Ontology**. 
 
    The  system  generates **5  entity  types** (Hospitals,  Departments,  Rooms, Patients,  VitalSignEquipment)  with  all  their  properties  and **4  relationship types** based on the semantic model relationships. The VitalSignEquipment entity has static properties from the lakehouse, but doesn’t yet have the time-series vital signs readings from the eventhouse — you’ll add that as a second binding after configuring the relationship bindings. 
 
-   ![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.033.jpeg)
+   ![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.033.jpeg)
 
 After generating the ontology, you need to complete the following tasks manually: 
 
@@ -198,7 +198,7 @@ After generating the ontology, you need to complete the following tasks manually
 1. **Verify and configure relationship types** so the relationships are queryable 
 1. **Add time-series binding** to VitalSignEquipment for real-time vital signs data You’ll complete these tasks in the sections below. 
 
-   ![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.034.jpeg)
+   ![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.034.jpeg)
 
 **Review and add entity type keys** 
 
@@ -218,15 +218,15 @@ Each entity type needs a key property that uniquely identifies each instance. Du
 |patients |PatientId |
 |vitalsignequipment |EquipmentId |
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.035.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.035.jpeg)
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.036.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.036.jpeg)
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.037.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.037.jpeg)
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.038.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.038.jpeg)
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.039.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.039.jpeg)
 
 **Verify and configure relationship types** 
 
@@ -241,7 +241,7 @@ The image below shows a configured relationship using the departments table:
 - **Section 1 (Source entity type)**: DepartmentId — identifies the department instance 
 - **Section 2 (Target entity type)**: HospitalId — identifies which hospital the department belongs to 
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.040.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.040.jpeg)
 
 Now let’s check the relationships in your ontology: 
 
@@ -261,7 +261,7 @@ If the relationship requires configuration, complete these steps:
 - **Schema**: Select **dbo** 
 - **Table**: Select **Departments** 
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.041.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.041.jpeg)
 
 **Note**: Select the Departments table (not Hospitals) because it contains both the department identifier and the hospital reference. The Hospitals table has no column pointing back to departments, so it can’t express the direction of the relationship. 
 
@@ -293,11 +293,11 @@ Verify the remaining three relationships. Configure any that require setup using
 ||||
 With all four relationships verified and configured, your ontology understands the complete healthcare data model: hospitals contain departments, departments contain rooms, patients are admitted to rooms, and vital sign equipment is assigned to patients. 
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.042.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.042.jpeg)
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.043.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.043.jpeg)
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.044.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.044.jpeg)
 
 **Add time-series binding to VitalSignEquipment** 
 
@@ -312,7 +312,7 @@ The  VitalSignEquipment  entity  currently  has  only  static  properties  from 
 1. For **Binding type**, select **Time series**. 
 1. For **Source data timestamp column**, select **Timestamp**. 
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.045.jpeg)[!IMPORTANT] Time-series bindings require a matching key from static data. The static binding you already have provides EquipmentId as the key to link streaming readings to equipment entities. 
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.045.jpeg)[!IMPORTANT] Time-series bindings require a matching key from static data. The static binding you already have provides EquipmentId as the key to link streaming readings to equipment entities. 
 
 9. Configure the time-series binding: 
 - **Static section** - Maps the key to link streaming data to entities: 
@@ -325,13 +325,13 @@ The  VitalSignEquipment  entity  currently  has  only  static  properties  from 
   - OxygenSaturation → OxygenSaturation 
   - RespiratoryRate → RespiratoryRate 
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.046.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.046.jpeg)
 
 Your configuration should look like this: 
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.047.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.047.jpeg)
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.048.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.048.jpeg)
 
 **Preview the ontology** 
 
@@ -347,8 +347,8 @@ You’ll see tiles showing:
 - **Property  charts**:  Bar  charts  showing  the  distribution  of  property values (like RoomType, RoomNumber, or DepartmentId) 
 - **Entity instances table**: List of all individual room instances with their properties 
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.049.jpeg)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.049.jpeg)
 
 **Clean up resources** 
 
-![](Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.050.png)
+![](images/Aspose.Words.860a677e-f095-4662-9d8c-59c3c96c1ca6.050.png)
