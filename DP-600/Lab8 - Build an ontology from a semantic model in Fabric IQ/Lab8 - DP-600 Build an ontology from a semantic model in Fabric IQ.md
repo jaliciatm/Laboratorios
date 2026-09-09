@@ -2,8 +2,8 @@
 
 **Build an ontology from a semantic model** 
 **in Fabric IQ**
-/br
 
+---
 There are two ways to build a Fabric IQ ontology: manually, by creating each entity type and relationship from scratch, or automatically, by generating the structure from a Power BI semantic model. This lab uses the semantic model approach. 
 
 In  this  lab,  you’ll  load  sample  data  for  a  fictitious  healthcare  company  into  a lakehouse and eventhouse, build a semantic model on top of it, and then generate an ontology from that model. The sample data represents hospitals, departments, rooms, patients, vital sign equipment, and vital signs readings. Each table in the semantic model becomes an entity type, and each relationship between tables becomes a relationship type in the ontology. 
