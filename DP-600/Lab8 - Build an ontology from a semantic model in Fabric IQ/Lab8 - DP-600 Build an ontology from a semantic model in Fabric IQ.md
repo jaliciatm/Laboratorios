@@ -1,4 +1,4 @@
-﻿##**Laboratorio 8  DP-600**
+﻿**Laboratorio 8  DP-600**
 
 **Build an ontology from a semantic model** 
 **in Fabric IQ**
